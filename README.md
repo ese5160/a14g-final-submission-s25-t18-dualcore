@@ -61,9 +61,13 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ## 4. Project Photos & Screenshots
 
+**Photos of Final Project:**
+
 ![alt text](EC01G_Physical_Design1.jpeg)
 
 ![alt text](EC01G_Physical_Design2.jpeg)
+
+![alt text](EC01G_Physical_Design3.jpeg)
 
 ## Codebase
 
