@@ -77,6 +77,10 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ![alt text](PCBA_BOTTOM.jpeg)
 
+- **Thermal camera images while the board is running under load 120% (936mA):**
+
+![alt text](ThermalCamera.jpeg)
+
 ## Codebase
 
 - A link to your final embedded C firmware codebases
