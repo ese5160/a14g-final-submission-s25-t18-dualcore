@@ -81,6 +81,20 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ![alt text](ThermalCamera.jpeg)
 
+- **The Altium Board design in 2D view (screenshot):**
+
+![alt text](AltiumBoard_2D.png)
+
+- **The Altium Board design in 3D view (screenshot):**
+
+![alt text](AltiumBoard_3D.png)
+
+- **Node-RED dashboard (screenshot):**
+
+- **Node-RED backend (screenshot):**
+  
+- **Block diagram of your system:**
+  
 ## Codebase
 
 - A link to your final embedded C firmware codebases
