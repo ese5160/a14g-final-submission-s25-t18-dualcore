@@ -61,6 +61,10 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ## 4. Project Photos & Screenshots
 
+![alt text](EC01G_Physical_Design1.jpeg)
+
+![alt text](EC01G_Physical_Design2.jpeg)
+
 ## Codebase
 
 - A link to your final embedded C firmware codebases
