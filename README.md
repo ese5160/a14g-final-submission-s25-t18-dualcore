@@ -4,7 +4,7 @@
     * Team Number: 18
     * Team Name: DualCore
     * Team Members: Peng Su, Yuanchao Zhang
-    * Github Repository URL: 
+    * Github Repository URL: https://github.com/ese5160/a14g-final-submission-s25-t18-dualcore
     * Description of test hardware: (1) Apple M3 Pro, macOS Sonoma (2) Apple M1 Pro - MacBook (development boards, sensors, actuators, laptop + OS, etc) 
 
 ## 1. Video Presentation
@@ -61,13 +61,21 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ## 4. Project Photos & Screenshots
 
-**Photos of Final Project:**
+- **Photos of Final Project:**
 
 ![alt text](EC01G_Physical_Design1.jpeg)
 
 ![alt text](EC01G_Physical_Design2.jpeg)
 
 ![alt text](EC01G_Physical_Design3.jpeg)
+
+- **The Standalone PCBA, TOP:**
+
+![alt text](PCBA_TOP.jpeg)
+
+- **The Standalone PCBA, BOTTOM:**
+
+![alt text](PCBA_BOTTOM.jpeg)
 
 ## Codebase
 
