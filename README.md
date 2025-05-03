@@ -51,6 +51,12 @@ Moving Wheel Assembly: Facilitates smooth and stable horizontal sliding of the w
 
 Customized Servo Gear: Mechanically interlocks with a linear gear strip mounted along the top edge of the window, converting the servo’s rotational motion into linear sliding motion for precise control.
 
+### Challenges
+
+One of the most memorable challenges we faced was designing a flexible and intelligent way for users to control the window’s opening and closing. While we initially implemented four Node-RED UI buttons for remote control, we soon realized limitations in real-world edge cases. For example, if the Internet connection is lost, users cannot rely on the UI buttons, leaving manual hand-movement as the only fallback, which undermines the intelligence of the system. Additionally, simple button controls lack novelty and do not align with the natural user habit of sliding windows by hand.
+
+To overcome this, Peng Su proposed a pivotal enhancement: integrating the APDS-9960 gesture sensor into our final design. This was not part of our original plan but turned out to be a game-changing addition. With carefully developed firmware, we enabled intuitive left and right-hand gestures to control window movement in real time. This solution not only restored control in offline scenarios but also provided a more natural and engaging user experience, striking the ideal balance between technological innovation and familiar daily habits.
+
 ## 3. Hardware & Software Requirements
 
 ## 4. Project Photos & Screenshots
