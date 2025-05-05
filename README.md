@@ -63,6 +63,10 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ### Project Links
 
+- [Node-RED UI Link](http://172.190.44.195:1880/ui/#!/2)
+
+- [Altium 365 PCBA Link](https://upenn-eselabs.365.altium.com/designs/74F5107D-5401-45F2-BDF6-51E560E29148#design)
+
 ## 3. Hardware & Software Requirements
 
 ## Hardware Requirements Specification (HRS)
