@@ -57,6 +57,12 @@ One of the most memorable challenges we faced was designing a **flexible and int
 
 To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **APDS-9960 gesture sensor** into our final design. This was not part of our original plan, but it turned out to be a **game-changing addition:** With carefully developed firmware, we enabled **intuitive left and right-hand gestures to control window movement in real time.** This solution not only restored **control in offline scenarios** but also provided a **more natural and engaging user experience,** striking the ideal balance between technological innovation and familiar daily habits.
 
+### Prototype Learnings
+
+### Next Steps & Takeaways
+
+### Project Links
+
 ## 3. Hardware & Software Requirements
 
 ## Hardware Requirements Specification (HRS)
