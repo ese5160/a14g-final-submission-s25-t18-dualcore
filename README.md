@@ -27,13 +27,13 @@ To enhance its intelligence and connectivity, our system uses the Internet in tw
 
 Our Internet-connected smart window system integrates sensors, actuators, and mechanical elements to achieve IoT functionality:
 
-- **Sensors (all I²C-based):**
+- **Sensors:**
 
-SHTC3: Temperature and humidity sensor. It provides real-time environmental data used to determine whether the window should be opened or closed automatically and also updates the Node-RED dashboard for remote user awareness.
+SHTC3 (I²C-based): Temperature and humidity sensor. It provides real-time environmental data used to determine whether the window should be opened or closed automatically and also updates the Node-RED dashboard for remote user awareness.
 
-SGP40: VOC (air quality) sensor. When indoor air quality drops (e.g., smoke or poor ventilation), this sensor triggers the system to open the window for immediate ventilation.
+SGP40 (I²C-based): VOC (air quality) sensor. When indoor air quality drops (e.g., smoke or poor ventilation), this sensor triggers the system to open the window for immediate ventilation.
 
-APDS-9960: Gesture sensor for physical user input. It allows the user to switch between control modes or manually operate the window without needing a mobile interface.
+APDS-9960 (I²C-based): Gesture sensor for physical user input. It allows the user to switch between control modes or manually operate the window without needing a mobile interface.
 
 Switch Reed: Magnetic contact sensor used to detect when the window is fully closed and signals the servo to stop rotation, ensuring precise and safe positioning.
 
