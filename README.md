@@ -59,6 +59,92 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ## 3. Hardware & Software Requirements
 
+## Hardware Requirements Specification (HRS)
+
+### HRS 01 – Microcontroller & PCB
+- The system shall use a SAM W25-based custom PCB with I/O for sensors, actuators, and communication interfaces (I²C, UART, SPI).
+- The PCB shall provide Wi-Fi connectivity and headers for external modules.
+
+✅ **We have shown the integration of custom PCBA in Part 4: Project Photos & Screenshots.**
+
+### HRS 02 – Sensors
+- The system shall include:
+  - **SHTC3** to measure indoor temperature and humidity.
+  - **SGP40** to detect VOCs and air quality issues.
+  - **APDS-9960** to enable gesture-based control.
+  - **Switch Reed** to detect full window closure and signal the servo to stop.
+
+✅ **We have shown the integration of all Sensors with our custom PCBA in Part 4: Project Photos & Screenshots.**
+
+### HRS 03 – Window Actuator
+- The system shall use an FS5103R continuous rotation servo:
+  - PWM-based control: CW (700–1500 µs), CCW (1500–2300 µs), Stop (1500 µs).
+  - Shall be mechanically coupled using a custom gear and linear gear strip.
+
+✅ **We have shown the integration of the Actuator with our custom PCBA, gear, and linear gear strip in Part 4: Project Photos & Screenshots.**
+
+### HRS 04 – PDLC Film Control
+
+- The system shall use a step-up and DC-to-AC converter to drive PDLC film, with a 4-channel Relay switching AC power to each segment for individual control.
+- Each segment shall be individually controllable to display weather data.
+- High-voltage lines shall be safely isolated and protected.
+
+✅ **We have shown the integration of the PDLC Film (Sunny, Cloudy, Overcast, Rainy) with our 4-channel Relay in Part 1: Video Presentation and Part 4: Project Photos & Screenshots.**
+
+### HRS 05 – Optional Voice System
+- The PCB shall support an optional speaker module via UART or I²S.
+
+### HRS 06 – Housing & Mounting
+- All components shall fit within an acrylic frame with mounting points and ventilation.
+- PDLC film shall be flush-mounted on the window surface.
+
+✅ **We have shown the integration of our "Housing" with all other parts in Part 4: Project Photos & Screenshots.**
+
+### HRS 07 – Switch Reed Integration
+- The system shall stop servo movement immediately when the Switch Reed detects full window closure.
+
+✅ **We have shown the function of our Switch Reed in Part 1: Video Presentation.**
+
+### HRS 09 – Roller Mechanism
+– The window shall use two dual-wheel assemblies to ensure smooth and consistent sliding.
+
+✅ **We have shown the integration of our bottom window with two brass flat-edge dual-rollers in Part 1: Video Presentation and Part 4: Project Photos & Screenshots.**
+
+---
+
+## Software Requirements Specification (SRS)
+
+### SRS 01 – Real-Time Monitoring
+- The system shall collect and transmit temperature, humidity, and air quality data to a Node-RED dashboard via Wi-Fi.
+
+### SRS 02 – Node-RED Remote Control
+- The system shall provide four remote control buttons via Node-RED:
+  - Open Window  
+  - Close Window  
+  - Stop Motion  
+  - Resume Previous Status
+
+### SRS 03 – Gesture-Based Control
+- The system shall support gesture commands via the APDS-9960 sensor:
+  - Left swipe: Open window  
+  - Right swipe: Close window  
+  - Vertical swipe: Switch control mode
+
+### SRS 04 – Intelligent Automation
+- The system shall use an algorithm that considers temperature, humidity, and air quality together to make smart window control decisions.
+- The logic shall prevent conflicting actions (e.g., opening during rain despite poor air quality).
+
+### SRS 05 – Redundant Motion Prevention
+- The system shall not re-open if the window is already open, nor re-close if already closed.
+
+### SRS 06 – PDLC Weather Display with Override
+- The system shall display real-time weather data on the PDLC film using API input.
+- The display shall update at least once per minute.
+- Manual override commands shall take precedence over automated updates.
+
+### SRS 07 – Offline Control Resilience
+- Gesture-based control shall remain functional when Wi-Fi or Internet connectivity is lost.
+
 ## 4. Project Photos & Screenshots
 
 - **Photos of Final Project:**
