@@ -124,26 +124,34 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
   - Stop Motion  
   - Resume Previous Status
 
+✅ **We have shown all four remote window control operations in Part 1: Video Presentation.**
+
 ### SRS 03 – Gesture-Based Control
 - The system shall support gesture commands via the APDS-9960 sensor:
+  - Vertical swipe: Switch control mode
   - Left swipe: Open window  
   - Right swipe: Close window  
-  - Vertical swipe: Switch control mode
+
+✅ **We have shown all three window control operations via gestures in Part 1: Video Presentation.**
 
 ### SRS 04 – Intelligent Automation
 - The system shall use an algorithm that considers temperature, humidity, and air quality together to make smart window control decisions.
 - The logic shall prevent conflicting actions (e.g., opening during rain despite poor air quality).
 
+✅ **We have shown all automatic window control operations based on change of conditions in Part 1: Video Presentation.**
+
 ### SRS 05 – Redundant Motion Prevention
-- The system shall not re-open if the window is already open, nor re-close if already closed.
+- The system shall not re-open if the window is already fully open, nor re-close if already fully closed.
+
+✅ **We have shown that our switch reeds stop the servo as the window is fully open or closed in Part 1: Video Presentation.**
 
 ### SRS 06 – PDLC Weather Display with Override
 - The system shall display real-time weather data on the PDLC film using API input.
-- The display shall update at least once per minute.
-- Manual override commands shall take precedence over automated updates.
+– The system shall allow users to remotely schedule PDLC on/off times via Node-RED
+- Manual override commands shall take precedence over scheduled updates.
 
-### SRS 07 – Offline Control Resilience
-- Gesture-based control shall remain functional when Wi-Fi or Internet connectivity is lost.
+✅ **We have shown that our PDLC Film is properly turned on/off and displays real-time weather data from the API in Part 1: Video Presentation.**
+
 
 ## 4. Project Photos & Screenshots
 
