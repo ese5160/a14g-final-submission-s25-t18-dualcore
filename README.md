@@ -59,6 +59,18 @@ To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **
 
 ### Prototype Learnings
 
+- **Increase Clearance Between Connectors with Uncertain Dimensions on Custom PCBA:**
+
+We learned that mechanical layout decisions can significantly impact both the assembly process and long-term usability. Specifically, placing connectors with uncertain or varying physical dimensions too close together made soldering more difficult and introduced the risk of interference between components. This highlighted the importance of accounting for mechanical tolerances and cable accessibility early in the PCB design stage.
+
+We would increase the clearance between connectors with uncertain dimensions on our custom PCBA. This adjustment would improve soldering accessibility, mechanical stability, and allow more space for cable routing during integration and testing. We would also implement 3D layout checks or physical measurements during PCB design to catch these issues before fabrication.
+
+- **Integrate Wi-Fi Tasks with Driver Tasks Early to Ensure Consistent and Compatible System Behavior:**
+
+Building and testing this smart window prototype taught us the importance of system-level integration early in the development process. While individual sensor and driver modules functioned well in isolation, we encountered unexpected issues when combining them—particularly with Wi-Fi tasks interacting with timing-sensitive drivers like PWM-based servo control and I²C sensors. These timing mismatches led to inconsistent behaviors and responsiveness during testing.
+
+If we were to build this device again, we would focus on early integration of communication tasks (like Wi-Fi and MQTT) with hardware control tasks. Doing so would allow us to catch conflicts sooner and refine the FreeRTOS task structure and synchronization mechanisms before final debugging. We would also improve the gesture detection pipeline for better real-time reliability and spend more time validating environmental thresholds under real-world conditions. This iterative process reinforced that success depends not just on individual components working—but on how well they work together in a coordinated system.
+
 ### Next Steps & Takeaways
 
 ### Project Links
