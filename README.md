@@ -259,5 +259,5 @@ If we were to build this device again, we would focus on early integration of co
 
 - A link to our final **embedded C firmware codebases:** 
   
-- A link to our **Node-RED dashboard code:** https://github.com/ese5160/a14g-final-submission-s25-t18-dualcore/tree/main/Node-RED%20Dashboard%20Code 
+- A link to our **Node-RED dashboard code:** https://github.com/ese5160/a14g-final-submission-s25-t18-dualcore/blob/main/Node-RED%20Dashboard%20Code/Final_Project.json
 
