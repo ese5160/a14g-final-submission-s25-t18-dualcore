@@ -77,6 +77,36 @@ If we were to build this device again, we would focus on early integration of co
 
 ### Next Steps & Takeaways
 
+- **Next Steps to Improve Our Project:**
+
+**Optimize Gesture Detection:** We plan to switch from polling-based gesture recognition to an interrupt-driven approach for better responsiveness and accuracy.
+
+**Refine Sensor Thresholds:** We aim to calibrate our temperature, humidity, and VOC thresholds through controlled testing to reduce false triggers.
+
+**Enhance Reliability of Wi-Fi Tasks:** We observed occasional delays or failures in WiFi communication and plan to implement reconnection logic and error handling to improve stability.
+
+**Balance Simultaneous FreeRTOS Tasks:** We aim to improve task timing and prioritization across gesture sensing, servo control, sensor reading, and MQTT communication to ensure smooth and deterministic system behavior.
+
+**Improve Power Efficiency:** We will explore low-power modes for the MCU and sensors to prepare the system for real-world deployment with minimal power usage.
+
+**Finalize Hardware Packaging:** We intend to design a clean, functional enclosure and perform long-term tests in real home or lab environments.
+
+- **Takeaways from ESE5160:**
+
+**Custom PCBA Design:** We successfully customized our own PCBA in Altium Designer, iterated on schematics and layout, and verified the functionality through board bring-up and thermal testing.
+
+**Firmware Development:** We learned to build FreeRTOS-based firmware with multitasking, semaphores, and resource synchronization.
+
+**Sensor Integration:** We became comfortable interfacing with multiple I2C sensors and validating their data through real-time testing.
+
+**IoT Communication:** We implemented bidirectional MQTT communication and created a user-friendly Node-RED dashboard for remote control.
+
+**Debugging & Testing:** We practiced debugging real-time systems and handling edge cases such as task delays, sensor errors, and communication failures.
+
+**Mechanical Integration (MCAD):** We designed and fabricated a custom mechanical window frame with a servo-driven actuation system, ensuring proper fit and alignment between the PCBA and mechanical components.
+
+**System Integration:** We developed a complete end-to-end system that connects physical sensing, actuator control, and cloud interaction.
+
 ### Project Links
 
 - [Node-RED UI Link](http://172.190.44.195:1880/ui/#!/2)
