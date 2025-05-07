@@ -29,27 +29,27 @@ Our Internet-connected smart window system integrates sensors, actuators, and me
 
 - **Sensors:**
 
-SHTC3 (I²C-based): Temperature and humidity sensor. It provides real-time environmental data used to determine whether the window should be opened or closed automatically and also updates the Node-RED dashboard for remote user awareness.
+**SHTC3 (I²C-based): Temperature and humidity sensor.** It provides real-time environmental data used to determine whether the window should be opened or closed automatically and also updates the Node-RED dashboard for remote user awareness.
 
-SGP40 (I²C-based): VOC (air quality) sensor. When indoor air quality drops (e.g., smoke or poor ventilation), this sensor triggers the system to open the window for immediate ventilation.
+**SGP40 (I²C-based): VOC (air quality) sensor.** When indoor air quality drops (e.g., smoke or poor ventilation), this sensor triggers the system to open the window for immediate ventilation.
 
-APDS-9960 (I²C-based): Gesture sensor for physical user input. It allows the user to switch between control modes or manually operate the window without needing a mobile interface.
+**APDS-9960 (I²C-based): Gesture sensor for physical user input.** It allows the user to switch between control modes or manually operate the window without needing a mobile interface.
 
-Switch Reed: Magnetic contact sensor used to detect when the window is fully closed and signals the servo to stop rotation, ensuring precise and safe positioning.
+**Switch Reed:** Magnetic contact sensor used to detect when the window is fully closed and signals the servo to stop rotation, ensuring precise and safe positioning.
 
 - **Actuators:**
 
-FS5103R Continuous Rotation Servo: Controls window movement using continuous 360-degree rotation. It operates based on pulse width modulation (PWM), allowing clockwise rotation (700–1500 µs), counter-clockwise rotation (1500–2300 µs), and stops at the neutral 1500 µs signal. This flexibility enables precise directional control for opening and closing the window.
+**FS5103R Continuous Rotation Servo: Controls window movement using continuous 360-degree rotation.** It operates based on pulse width modulation (PWM), allowing clockwise rotation (700–1500 µs), counter-clockwise rotation (1500–2300 µs), and stops at the neutral 1500 µs signal. This flexibility enables precise directional control for opening and closing the window.
 
-4-Channel Relay Module: Switches high-voltage PDLC segments.
+**4-Channel Relay Module:** Switches high-voltage PDLC segments.
 
-PDLC Film: Acts as both a visual output and a controllable display surface.
+**PDLC Film:** Acts as both a visual output and a controllable display surface.
 
 - **Other Critical Components:**
 
-Moving Wheel Assembly: Facilitates smooth and stable horizontal sliding of the window, reducing friction and supporting accurate movement during actuation.
+**Moving Wheel Assembly:** Facilitates smooth and stable horizontal sliding of the window, reducing friction and supporting accurate movement during actuation.
 
-Customized Servo Gear: Mechanically interlocks with a linear gear strip mounted along the top edge of the window, converting the servo’s rotational motion into linear sliding motion for precise control.
+**Customized Servo Gear:** Mechanically interlocks with a linear gear strip mounted along the top edge of the window, converting the servo’s rotational motion into linear sliding motion for precise control.
 
 - **System-Level Block Diagram:**
 
