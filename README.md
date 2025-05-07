@@ -188,9 +188,9 @@ If we were to build this device again, we would focus on early integration of co
 
 ### SRS 03 – Gesture-Based Control
 - The system shall support gesture commands via the APDS-9960 sensor:
-  - Vertical swipe: Switch control mode
-  - Left swipe: Open window  
-  - Right swipe: Close window  
+  - Vertical swipe: Switch control mode (UP: Custom Mode, DOWN: Automated Mode)
+  - Left swipe (Custom Mode): Open window  
+  - Right swipe (Custom Mode): Close window  
 
 ✅ **We have shown all three window control operations via gestures in Part 1: Video Presentation.**
 
