@@ -109,9 +109,9 @@ If we were to build this device again, we would focus on early integration of co
 
 ### Project Links
 
-- [Node-RED UI Link](http://172.190.44.195:1880/ui/#!/2)
+- Public URL to our **Node-RED UI**: [Node-RED UI Link](http://172.190.44.195:1880/ui/#!/2)
 
-- [Altium 365 PCBA Link](https://upenn-eselabs.365.altium.com/designs/74F5107D-5401-45F2-BDF6-51E560E29148#design)
+- Public link to our final **PCBA on Altium 365**: [Altium 365 PCBA Link](https://upenn-eselabs.365.altium.com/designs/74F5107D-5401-45F2-BDF6-51E560E29148#design)
 
 ## 3. Hardware & Software Requirements
 
