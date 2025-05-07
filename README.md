@@ -17,7 +17,7 @@ This smart window system integrates three user settings: gesture-based physical 
 
 - **Inspiration & Problem Solution:**
 
-In an era of smart devices and automation, why haven’t our windows learned to take care of themselves? This project began with that simple yet overlooked question, reflecting the frustration of users who are either too busy or too far away to manually manage their windows. While many smart home solutions focus on lighting or HVAC, intelligent window systems remain relatively rare. Our system addresses this gap by combining gesture control, automated environmental response, and remote access via Node-RED—empowering users to maintain a comfortable and safe indoor environment whether they're home, at work, or asleep.
+In an era of smart devices and automation, why haven’t our windows learned to take care of themselves? This project began with that simple yet overlooked question, reflecting the frustration of users who are either too busy or too far away to manage their windows manually. While many smart home solutions focus on lighting or HVAC, intelligent window systems remain relatively rare. Our system addresses this gap by combining gesture control, automated environmental response, and remote access via Node-RED—empowering users to maintain a comfortable and safe indoor environment whether they're home, at work, or asleep.
 
 - **Internet-Augmented functionality:**
 
@@ -51,6 +51,10 @@ Moving Wheel Assembly: Facilitates smooth and stable horizontal sliding of the w
 
 Customized Servo Gear: Mechanically interlocks with a linear gear strip mounted along the top edge of the window, converting the servo’s rotational motion into linear sliding motion for precise control.
 
+- **System-Level Block Diagram:**
+
+![alt text](System_BlockDiagram.svg)
+
 ### Challenges & Solutions
 
 One of the most memorable challenges we faced was designing a **flexible and intelligent way for users to control the window’s opening and closing.** While we initially implemented four Node-RED UI buttons for remote operation, we quickly discovered limitations, both in real-world edge cases and during testing. For instance, when the **Internet connection is lost,** users cannot rely on the UI, leaving manual hand-movement as the only fallback, which compromises the system’s intelligence. Even when the network connection is stable, we observed that our **multiple WiFi Tasks could become unresponsive or slow to react,** especially when handling transitions between **different servo operations** that depend on carefully tuned PWM signals. These delays occasionally prevented timely command execution from the Node-RED interface, resulting in **inconsistent control.** Moreover, relying solely on button presses **lacked novelty** and didn’t align with the intuitive, physical habit of sliding windows by hand, prompting us to **explore a more natural, responsive solution:**
@@ -67,9 +71,9 @@ We would increase the clearance between connectors with uncertain dimensions on 
 
 - **Integrate Wi-Fi Tasks with Driver Tasks Early to Ensure Consistent and Compatible System Behavior:**
 
-Building and testing this smart window prototype taught us the importance of system-level integration early in the development process. While individual sensor and driver modules functioned well in isolation, we encountered unexpected issues when combining them—particularly with Wi-Fi tasks interacting with timing-sensitive drivers like PWM-based servo control and I²C sensors. These timing mismatches led to inconsistent behaviors and responsiveness during testing.
+Building and testing this smart window prototype taught us the importance of system-level integration early in the development process. While individual sensor and driver modules functioned well in isolation, we encountered unexpected issues when combining them, particularly with Wi-Fi tasks interacting with timing-sensitive drivers like PWM-based servo control and I²C sensors. These timing mismatches led to inconsistent behaviors and responsiveness during testing.
 
-If we were to build this device again, we would focus on early integration of communication tasks (like Wi-Fi and MQTT) with hardware control tasks. Doing so would allow us to catch conflicts sooner and refine the FreeRTOS task structure and synchronization mechanisms before final debugging. We would also improve the gesture detection pipeline for better real-time reliability and spend more time validating environmental thresholds under real-world conditions. This iterative process reinforced that success depends not just on individual components working—but on how well they work together in a coordinated system.
+If we were to build this device again, we would focus on early integration of communication tasks (like Wi-Fi and MQTT) with hardware control tasks. Doing so would allow us to catch conflicts sooner and refine the FreeRTOS task structure and synchronization mechanisms before final debugging. We would also improve the gesture detection pipeline for better real-time reliability and spend more time validating environmental thresholds under real-world conditions. This iterative process reinforced that success depends not just on individual components working, but on how well they work together in a coordinated system.
 
 ### Next Steps & Takeaways
 
@@ -138,6 +142,10 @@ If we were to build this device again, we would focus on early integration of co
 
 ### SRS 01 – Real-Time Monitoring
 - The system shall collect and transmit temperature, humidity, and air quality data to a Node-RED dashboard via Wi-Fi.
+
+✅ **We compared our system’s temperature and humidity readings with those from the apartment’s air conditioning system. The temperature measurements showed a deviation of approximately ±1.5 °C, while humidity differed by about ±2.3%. For VOC, although we do not have an external reference to directly verify its accuracy, we confirmed that the readings remain around 100 in a typical indoor environment, which is consistent with the expected range described in the SGP40 datasheet.**
+
+**However, these small discrepancies do not hinder the system’s effectiveness, as our design emphasizes detecting dynamic environmental trends rather than relying on absolute precision. This sensitivity to environmental change ensures reliable activation of window control actions in response to conditions such as rising temperature, humidity, or VOC levels.**
 
 ### SRS 02 – Node-RED Remote Control
 - The system shall provide four remote control buttons via Node-RED:
@@ -210,7 +218,9 @@ If we were to build this device again, we would focus on early integration of co
 - **Node-RED backend (screenshot):**
   
 - **Block diagram of your system:**
-  
+
+![alt text](System_BlockDiagram.svg)
+
 ## Codebase
 
 - A link to your final embedded C firmware codebases
