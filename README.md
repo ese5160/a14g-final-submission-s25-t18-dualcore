@@ -5,7 +5,7 @@
     * Team Name: DualCore
     * Team Members: Peng Su, Yuanchao Zhang
     * Github Repository URL: https://github.com/ese5160/a14g-final-submission-s25-t18-dualcore
-    * Github Website Page: https://ese5160.github.io/a14g-final-submission-s25-t18-dualcore/
+    * GitHub Pages Website: https://ese5160.github.io/a14g-final-submission-s25-t18-dualcore/
     * Description of test hardware: (1) Custom SAM W25-based PCBA (2) Sensors: SHTC3, SGP40, APDS-9960, Switch Reed (3) Actuators: FS5103R servo, 4-Channel Relay, PDLC film (4) Apple M3 Pro + macOS Sonoma (5) HP Laptop + Windows 10
 
 ## 1. Video Presentation
