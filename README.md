@@ -10,6 +10,8 @@
 
 ## 1. Video Presentation
 
+[Video Presentation](https://www.youtube.com/watch?v=fN0mfGCGaM4)
+
 ## 2. Project Summary
 
 ### Device Description
