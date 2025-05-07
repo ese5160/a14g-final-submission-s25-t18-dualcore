@@ -117,6 +117,8 @@ If we were to build this device again, we would focus on early integration of co
 
 - Public link to our final **PCBA on Altium 365**: [Altium 365 PCBA Link](https://upenn-eselabs.365.altium.com/designs/74F5107D-5401-45F2-BDF6-51E560E29148#design)
 
+- A link to our final **embedded C firmware codebases:** https://github.com/ese5160/final-project-t18-dualcore/tree/main/Final%20Firmware%20Code
+  
 ## 3. Hardware & Software Requirements
 
 ## Hardware Requirements Specification (HRS)
