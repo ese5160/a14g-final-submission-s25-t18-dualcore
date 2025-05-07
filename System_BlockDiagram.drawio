@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.3.0">
   <diagram name="Page-1" id="5V5YtJxie7tnlJpk_O-b">
-    <mxGraphModel dx="814" dy="551" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="279" dy="189" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -24,7 +24,7 @@
         <mxCell id="dHRViFNPcDj-gL-n66T--6" value="GPIO x 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--1">
           <mxGeometry x="-8.5" y="157.43" width="60" height="9" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--7" value="GPIO x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--1">
+        <mxCell id="dHRViFNPcDj-gL-n66T--7" value="GPIO x 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--1">
           <mxGeometry x="7" y="77.62" width="29" height="9.38" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.006;exitY=0.14;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;fontSize=6;" edge="1" parent="dHRViFNPcDj-gL-n66T--1">
@@ -44,8 +44,8 @@
         <mxCell id="dHRViFNPcDj-gL-n66T--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.475;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="dHRViFNPcDj-gL-n66T--1" source="dHRViFNPcDj-gL-n66T--2" target="dHRViFNPcDj-gL-n66T--3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--103" value="GPIO x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--1">
-          <mxGeometry x="7" y="116.43" width="29" height="9.38" as="geometry" />
+        <mxCell id="dHRViFNPcDj-gL-n66T--103" value="GPIO x 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--1">
+          <mxGeometry x="7" y="118.43" width="29" height="9.38" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--12" value="Sensors" style="swimlane;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=6;" vertex="1" parent="1">
           <mxGeometry x="568" y="49.19" width="146" height="150" as="geometry">
@@ -130,14 +130,14 @@
         <mxCell id="dHRViFNPcDj-gL-n66T--30" value="Physical User Interface" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontSize=6;" vertex="1" parent="1">
           <mxGeometry x="131" y="236.19" width="170" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--31" value="On/Off Button" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--30">
+        <mxCell id="dHRViFNPcDj-gL-n66T--31" value="Reset Button" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--30">
           <mxGeometry x="36" y="39" width="102" height="33" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--32" value="Wi-Fi Provisioning Button" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--30">
           <mxGeometry x="37.25" y="81.88" width="99.5" height="33" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--33" value="LED Indicators" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--30">
-          <mxGeometry x="40" y="126" width="94" height="21" as="geometry" />
+        <mxCell id="dHRViFNPcDj-gL-n66T--33" value="System Status LED" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--30">
+          <mxGeometry x="37" y="126" width="99" height="21" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--34" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;strokeColor=#005700;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--30">
           <mxGeometry x="132" y="31" width="13" height="13" as="geometry" />
@@ -146,7 +146,7 @@
           <mxGeometry x="131" y="75.5" width="13" height="13" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--36" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;strokeColor=#005700;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--30">
-          <mxGeometry x="126" y="119" width="13" height="13" as="geometry" />
+          <mxGeometry x="128" y="119" width="13" height="13" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--38" value="Actuators" style="swimlane;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=6;startSize=23;" vertex="1" parent="1">
           <mxGeometry x="568" y="236.19" width="162" height="140.81" as="geometry">
@@ -166,7 +166,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--43" value="4-Chanel Relay" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
-          <mxGeometry x="41" y="75" width="90" height="20" as="geometry" />
+          <mxGeometry x="43" y="75" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--46" value="Digital I/O x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
           <mxGeometry x="-5" y="71" width="48" height="13" as="geometry" />
@@ -261,13 +261,13 @@
             <mxPoint x="393" y="294" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--102" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.004;entryY=0.912;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="dHRViFNPcDj-gL-n66T--3">
+        <mxCell id="dHRViFNPcDj-gL-n66T--102" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.004;entryY=0.912;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.997;exitY=0.581;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="dHRViFNPcDj-gL-n66T--33" target="dHRViFNPcDj-gL-n66T--3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="265" y="375" as="sourcePoint" />
+            <mxPoint x="266" y="375" as="sourcePoint" />
             <mxPoint x="336" y="345" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--104" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dHRViFNPcDj-gL-n66T--32" target="dHRViFNPcDj-gL-n66T--3">
+        <mxCell id="dHRViFNPcDj-gL-n66T--104" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dHRViFNPcDj-gL-n66T--32" target="dHRViFNPcDj-gL-n66T--3">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="298" y="368" as="sourcePoint" />
             <mxPoint x="393" y="333" as="targetPoint" />
