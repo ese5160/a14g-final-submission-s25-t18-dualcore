@@ -61,6 +61,10 @@ One of the most memorable challenges we faced was designing a **flexible and int
 
 To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **APDS-9960 gesture sensor** into our final design. This was not part of our original plan, but it turned out to be a **game-changing addition:** With carefully developed firmware, we enabled **intuitive left and right-hand gestures to control window movement in real time.** This solution not only restored **control in offline scenarios** but also provided a **more natural and engaging user experience,** striking the ideal balance between technological innovation and familiar daily habits.
 
+Another significant challenge is that we encountered was managing multiple concurrent tasks in FreeRTOS. With several real-time operations—such as sensor sampling, servo motor actuation, gesture detection, and MQTT communication—running in parallel, we quickly learned that improper task priority assignments or insufficient stack sizes could lead to task blocking, missed notifications, or even full system hangs. For example, delays in Wi-Fi publishing sometimes caused gesture detection or motor control to stall, leading to inconsistent system responses. 
+
+After in-depth debugging and analysis, we restructured our FreeRTOS architecture by prioritizing time-sensitive tasks like servo control and allocating appropriate stack space to each task based on its execution needs. This restructuring significantly improved system stability and responsiveness.
+
 ### Prototype Learnings
 
 - **Increase Clearance Between Connectors with Uncertain Dimensions on Custom PCBA:**
