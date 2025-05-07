@@ -2,7 +2,6 @@
     "files.associations": {
         "stdint.h": "c",
         "nm_bsp_samd21.h": "c",
-        "secret.h": "c",
-        "task.h": "c"
+        "secret.h": "c"
     }
 }
