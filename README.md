@@ -248,7 +248,9 @@ If we were to build this device again, we would focus on early integration of co
 ![alt text](Node-RED_Dashboard.png)
 
 - **Node-RED backend (screenshot):**
-  
+
+![alt text](Node-RED_Backend.png)
+
 - **Block diagram of your system:**
 
 ![alt text](System_BlockDiagram.svg)
