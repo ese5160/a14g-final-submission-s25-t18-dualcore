@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.3.0">
   <diagram name="Page-1" id="5V5YtJxie7tnlJpk_O-b">
-    <mxGraphModel dx="599" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="727" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,7 +48,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--12" value="Sensors" style="swimlane;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=6;" vertex="1" parent="1">
-          <mxGeometry x="568" y="57.19" width="157" height="122.81" as="geometry">
+          <mxGeometry x="568" y="40" width="157" height="150" as="geometry">
             <mxRectangle x="350" y="230" width="140" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -70,19 +70,34 @@
         <mxCell id="dHRViFNPcDj-gL-n66T--18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=6;" edge="1" parent="dHRViFNPcDj-gL-n66T--12" source="dHRViFNPcDj-gL-n66T--13" target="dHRViFNPcDj-gL-n66T--13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--19" value="I2C x 2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
+        <mxCell id="dHRViFNPcDj-gL-n66T--19" value="I2C x 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
           <mxGeometry x="-16" y="36" width="60" height="22" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--20" value="I2C x 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
-          <mxGeometry x="-16" y="77" width="60" height="14.5" as="geometry" />
+          <mxGeometry x="-16" y="63.5" width="60" height="14.5" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--76" value="Switch Reed" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
+        <mxCell id="dHRViFNPcDj-gL-n66T--76" value="Gesture Sensor" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
           <mxGeometry x="37.75" y="91.5" width="84.5" height="18" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--77" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="dHRViFNPcDj-gL-n66T--12">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-23.25" y="100.21000000000001" as="sourcePoint" />
             <mxPoint x="37.75" y="100.21000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dHRViFNPcDj-gL-n66T--79" value="Switch Reed" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
+          <mxGeometry x="37.75" y="120" width="84.5" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="dHRViFNPcDj-gL-n66T--80" value="I2C x 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
+          <mxGeometry x="-16" y="88.62" width="60" height="14.5" as="geometry" />
+        </mxCell>
+        <mxCell id="dHRViFNPcDj-gL-n66T--82" value="GPIO x 1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--12">
+          <mxGeometry x="-16" y="119" width="60" height="10.5" as="geometry" />
+        </mxCell>
+        <mxCell id="dHRViFNPcDj-gL-n66T--84" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="dHRViFNPcDj-gL-n66T--12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-23.25" y="128.93" as="sourcePoint" />
+            <mxPoint x="37.75" y="128.93" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--21" value="Power" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontSize=6;" vertex="1" parent="1">
@@ -137,7 +152,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--38" value="Actuators" style="swimlane;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=6;" vertex="1" parent="1">
-          <mxGeometry x="571" y="199.19" width="162" height="207" as="geometry">
+          <mxGeometry x="571" y="199.19" width="162" height="140.81" as="geometry">
             <mxRectangle x="350" y="230" width="140" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -165,11 +180,8 @@
         <mxCell id="dHRViFNPcDj-gL-n66T--46" value="SPI x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
           <mxGeometry x="-15.5" y="60" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--47" value="RTC" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
+        <mxCell id="dHRViFNPcDj-gL-n66T--47" value="Relay" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
           <mxGeometry x="56" y="102" width="57" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--48" value="Relay" style="rounded=0;whiteSpace=wrap;html=1;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
-          <mxGeometry x="43" y="135" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--50" value="PWM x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
           <mxGeometry x="-9.5" y="24" width="48" height="30" as="geometry" />
@@ -180,20 +192,8 @@
         <mxCell id="dHRViFNPcDj-gL-n66T--52" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;strokeColor=#005700;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
           <mxGeometry x="107" y="97" width="11" height="11" as="geometry" />
         </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--53" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;strokeColor=#005700;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
-          <mxGeometry x="118" y="130" width="11" height="11" as="geometry" />
-        </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--54" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;strokeColor=#005700;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
-          <mxGeometry x="122" y="165" width="11" height="11" as="geometry" />
-        </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--55" value="I2C x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
-          <mxGeometry x="-13.5" y="88.5" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--56" value="GPIO x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
-          <mxGeometry x="-13.5" y="125" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="dHRViFNPcDj-gL-n66T--57" value="GPIO x32" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
-          <mxGeometry x="-13.5" y="157" width="60" height="30" as="geometry" />
+        <mxCell id="dHRViFNPcDj-gL-n66T--55" value="GPIO x1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="dHRViFNPcDj-gL-n66T--38">
+          <mxGeometry x="-13.5" y="90.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="dHRViFNPcDj-gL-n66T--3" target="dHRViFNPcDj-gL-n66T--39">
           <mxGeometry relative="1" as="geometry">
@@ -269,8 +269,8 @@
         </mxCell>
         <mxCell id="dHRViFNPcDj-gL-n66T--75" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="545" y="133.19" as="sourcePoint" />
-            <mxPoint x="606" y="133.19" as="targetPoint" />
+            <mxPoint x="545" y="116" as="sourcePoint" />
+            <mxPoint x="606" y="116" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
