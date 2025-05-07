@@ -54,7 +54,7 @@ Our Internet-connected smart window system integrates sensors, actuators, and me
 
 - **System-Level Block Diagram:**
 
-![alt text](System_BlockDiagram.svg)
+![alt text](images/System_BlockDiagram.svg)
 
 ### Challenges & Solutions
 
@@ -224,43 +224,43 @@ If we were to build this device again, we would focus on early integration of co
 
 - **Photos of Final Project:**
 
-![alt text](EC01G_Physical_Design1.jpeg)
+![alt text](images/EC01G_Physical_Design1.jpeg)
 
-![alt text](EC01G_Physical_Design2.jpeg)
+![alt text](images/EC01G_Physical_Design2.jpeg)
 
-![alt text](EC01G_Physical_Design3.jpeg)
+![alt text](images/EC01G_Physical_Design3.jpeg)
 
 - **The Standalone PCBA, TOP:**
 
-![alt text](PCBA_TOP.jpeg)
+![alt text](images/PCBA_TOP.jpeg)
 
 - **The Standalone PCBA, BOTTOM:**
 
-![alt text](PCBA_BOTTOM.jpeg)
+![alt text](images/PCBA_BOTTOM.jpeg)
 
 - **Thermal camera images while the board is running under load 120% (936mA):**
 
-![alt text](ThermalCamera.jpeg)
+![alt text](images/ThermalCamera.jpeg)
 
 - **The Altium Board design in 2D view (screenshot):**
 
-![alt text](AltiumBoard_2D.png)
+![alt text](images/AltiumBoard_2D.png)
 
 - **The Altium Board design in 3D view (screenshot):**
 
-![alt text](AltiumBoard_3D.png)
+![alt text](images/AltiumBoard_3D.png)
 
 - **Node-RED dashboard (screenshot):**
 
-![alt text](Node-RED_Dashboard.png)
+![alt text](images/Node-RED_Dashboard.png)
 
 - **Node-RED backend (screenshot):**
 
-![alt text](Node-RED_Backend.png)
+![alt text](images/Node-RED_Backend.png)
 
 - **Block diagram of your system:**
 
-![alt text](System_BlockDiagram.svg)
+![alt text](images/System_BlockDiagram.svg)
 
 ## Codebase
 
