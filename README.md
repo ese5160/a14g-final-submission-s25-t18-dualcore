@@ -188,9 +188,9 @@ If we were to build this device again, we would focus on early integration of co
 
 ### SRS 03 – Gesture-Based Control
 - The system shall support gesture commands via the APDS-9960 sensor:
-  - Vertical swipe: Switch control mode (UP: Custom Mode, DOWN: Automated Mode)
-  - Left swipe (Custom Mode): Open window  
-  - Right swipe (Custom Mode): Close window  
+  - Vertical Swipe: Switch Control Mode (UP: Custom Mode, DOWN: Automated Mode)
+  - Left Swipe (Custom Mode): Open Window  
+  - Right Swipe (Custom Mode): Close Window  
 
 ✅ **We have shown all three window control operations via gestures in Part 1: Video Presentation.**
 
@@ -257,7 +257,7 @@ If we were to build this device again, we would focus on early integration of co
 
 ## Codebase
 
-- A link to your final embedded C firmware codebases
-- A link to your Node-RED dashboard code
-- Links to any other software required for the functionality of your device
+- A link to our final embedded C firmware codebases
+  
+- A link to our Node-RED dashboard code: [Node-RED UI Link](http://172.190.44.195:1880/ui/#!/2)
 
