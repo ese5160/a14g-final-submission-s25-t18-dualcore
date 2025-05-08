@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AlBFWSQg)
+
 # a14g-final-submission
 
     * Team Number: 18
@@ -64,7 +65,7 @@ One of the most memorable challenges we faced was designing a **flexible and int
 
 To overcome this, **Peng Su** proposed a pivotal enhancement: integrating the **APDS-9960 gesture sensor** into our final design. This was not part of our original plan, but it turned out to be a **game-changing addition:** With carefully developed firmware, we enabled **intuitive left and right-hand gestures to control window movement in real time.** This solution not only restored **control in offline scenarios** but also provided a **more natural and engaging user experience,** striking the ideal balance between technological innovation and familiar daily habits.
 
-Another significant challenge is that we encountered was managing multiple concurrent tasks in FreeRTOS. With several real-time operations—such as sensor sampling, servo motor actuation, gesture detection, and MQTT communication—running in parallel, we quickly learned that improper task priority assignments or insufficient stack sizes could lead to task blocking, missed notifications, or even full system hangs. For example, delays in Wi-Fi publishing sometimes caused gesture detection or motor control to stall, leading to inconsistent system responses. 
+Another significant challenge is that we encountered was managing multiple concurrent tasks in FreeRTOS. With several real-time operations—such as sensor sampling, servo motor actuation, gesture detection, and MQTT communication—running in parallel, we quickly learned that improper task priority assignments or insufficient stack sizes could lead to task blocking, missed notifications, or even full system hangs. For example, delays in Wi-Fi publishing sometimes caused gesture detection or motor control to stall, leading to inconsistent system responses.
 
 After in-depth debugging and analysis, we restructured our FreeRTOS architecture by prioritizing time-sensitive tasks like servo control and allocating appropriate stack space to each task based on its execution needs. This restructuring significantly improved system stability and responsiveness.
 
@@ -117,22 +118,22 @@ If we were to build this device again, we would focus on early integration of co
 ### Project Links
 
 - Public URL to our **Node-RED Dashboard**: [Node-RED UI Link](http://172.190.44.195:1880/ui/#!/2)
-
 - Public link to our final **PCBA on Altium 365**: [Altium 365 PCBA Link](https://upenn-eselabs.365.altium.com/designs/74F5107D-5401-45F2-BDF6-51E560E29148#design)
-
 - A link to our final **embedded C firmware codebases:** https://github.com/ese5160/final-project-t18-dualcore/tree/main/Final%20Firmware%20Code
-  
+
 ## 3. Hardware & Software Requirements
 
 ## Hardware Requirements Specification (HRS)
 
 ### HRS 01 – Microcontroller & PCB
+
 - The system shall use a SAM W25-based custom PCB with I/O for sensors, actuators, and communication interfaces (I²C, UART, SPI).
 - The PCB shall provide Wi-Fi connectivity and headers for external modules.
 
 ✅ **We have shown the integration of custom PCBA in Part 4: Project Photos & Screenshots.**
 
 ### HRS 02 – Sensors
+
 - The system shall include:
   - **SHTC3** to measure indoor temperature and humidity.
   - **SGP40** to detect VOCs and air quality issues.
@@ -142,6 +143,7 @@ If we were to build this device again, we would focus on early integration of co
 ✅ **We have shown the integration of all Sensors with our custom PCBA in Part 4: Project Photos & Screenshots.**
 
 ### HRS 03 – Window Actuator
+
 - The system shall use an FS5103R continuous rotation servo:
   - PWM-based control: CW (700–1500 µs), CCW (1500–2300 µs), Stop (1500 µs).
   - Shall be mechanically coupled using a custom gear and linear gear strip.
@@ -157,20 +159,24 @@ If we were to build this device again, we would focus on early integration of co
 ✅ **We have shown the integration of the PDLC Film (Sunny, Cloudy, Overcast, Rainy) with our 4-channel Relay in Part 1: Video Presentation and Part 4: Project Photos & Screenshots.**
 
 ### HRS 05 – Optional Voice System
+
 - The PCB shall support an optional speaker module via UART or I²S.
 
 ### HRS 06 – Housing & Mounting
+
 - All components shall fit within an acrylic frame with mounting points and ventilation.
 - PDLC film shall be flush-mounted on the window surface.
 
 ✅ **We have shown the integration of our "Housing" with all other parts in Part 4: Project Photos & Screenshots.**
 
 ### HRS 07 – Switch Reed Integration
+
 - The system shall stop servo movement immediately when the Switch Reed detects full window closure.
 
 ✅ **We have shown the function of our Switch Reed in Part 1: Video Presentation.**
 
 ### HRS 09 – Roller Mechanism
+
 – The window shall use two dual-wheel assemblies to ensure smooth and consistent sliding.
 
 ✅ **We have shown the integration of our bottom window with two brass flat-edge dual-rollers in Part 1: Video Presentation and Part 4: Project Photos & Screenshots.**
@@ -180,6 +186,7 @@ If we were to build this device again, we would focus on early integration of co
 ## Software Requirements Specification (SRS)
 
 ### SRS 01 – Real-Time Monitoring
+
 - The system shall collect and transmit temperature, humidity, and air quality data to a Node-RED dashboard via Wi-Fi.
 
 ✅ **We compared our system’s temperature and humidity readings with those from the apartment’s air conditioning system. The temperature measurements showed a deviation of approximately ±1.5 °C, while humidity differed by about ±2.3%. For VOC, although we do not have an external reference to directly verify its accuracy, we confirmed that the readings remain around 100 in a typical indoor environment, which is consistent with the expected range described in the SGP40 datasheet.**
@@ -187,40 +194,44 @@ If we were to build this device again, we would focus on early integration of co
 **However, these small discrepancies do not hinder the system’s effectiveness, as our design emphasizes detecting dynamic environmental trends rather than relying on absolute precision. This sensitivity to environmental change ensures reliable activation of window control actions in response to conditions such as rising temperature, humidity, or VOC levels.**
 
 ### SRS 02 – Node-RED Remote Control
+
 - The system shall provide four remote control buttons via Node-RED:
-  - Open Window  
-  - Close Window  
-  - Stop Motion  
+  - Open Window
+  - Close Window
+  - Stop Motion
   - Resume Previous Status
 
 ✅ **We have shown all four remote window control operations in Part 1: Video Presentation.**
 
 ### SRS 03 – Gesture-Based Control
+
 - The system shall support gesture commands via the APDS-9960 sensor:
   - Vertical Swipe: Switch Control Mode (UP: Custom Mode, DOWN: Automated Mode)
-  - Left Swipe (Custom Mode): Open Window  
-  - Right Swipe (Custom Mode): Close Window  
+  - Left Swipe (Custom Mode): Open Window
+  - Right Swipe (Custom Mode): Close Window
 
 ✅ **We have shown all three window control operations via gestures in Part 1: Video Presentation.**
 
 ### SRS 04 – Intelligent Automation
+
 - The system shall use an algorithm that considers temperature, humidity, and air quality together to make smart window control decisions.
 - The logic shall prevent conflicting actions (e.g., opening during rain despite poor air quality).
 
 ✅ **We have shown all automatic window control operations based on change of conditions in Part 1: Video Presentation.**
 
 ### SRS 05 – Redundant Motion Prevention
+
 - The system shall not re-open if the window is already fully open, nor re-close if already fully closed.
 
 ✅ **We have shown that our switch reeds stop the servo as the window is fully open or closed in Part 1: Video Presentation.**
 
 ### SRS 06 – PDLC Weather Display with Override
+
 - The system shall display real-time weather data on the PDLC film using API input.
-– The system shall allow users to remotely schedule PDLC on/off times via Node-RED
+  – The system shall allow users to remotely schedule PDLC on/off times via Node-RED
 - Manual override commands shall take precedence over scheduled updates.
 
 ✅ **We have shown that our PDLC Film is properly turned on/off and displays real-time weather data from the API in Part 1: Video Presentation.**
-
 
 ## 4. Project Photos & Screenshots
 
@@ -264,9 +275,13 @@ If we were to build this device again, we would focus on early integration of co
 
 ![alt text](images/System_BlockDiagram.svg)
 
+## 5. Demo Day
+
+![alt text](images/demo1.jpg)
+
+![alt text](images/demo2.JPG)
+
 ## Codebase
 
 - A link to our final **embedded C firmware codebases:** https://github.com/ese5160/final-project-t18-dualcore/tree/main/Final%20Firmware%20Code
-  
 - A link to our **Node-RED dashboard code:** https://github.com/ese5160/final-project-t18-dualcore/blob/main/Node-RED/Final_Project.json
-
