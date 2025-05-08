@@ -282,6 +282,8 @@ If we were to build this device again, we would focus on early integration of co
 
 ## 5. Demo Day
 
+🥇 Our project was awarded **1st Place**.
+
 ![alt text](images/demo1.jpg)
 
 ![alt text](images/demo2.JPG)
