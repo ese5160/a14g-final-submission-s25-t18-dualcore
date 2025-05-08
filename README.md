@@ -11,7 +11,13 @@
 
 ## 1. Video Presentation
 
+<div align="center">
+
 [![Video Presentation](images/Anticipated_Appearance.png)](https://www.youtube.com/watch?v=fN0mfGCGaM4)
+
+Click the image above to view the video presentation.
+
+</div>
 
 ## 2. Project Summary
 
