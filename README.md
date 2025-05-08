@@ -11,7 +11,7 @@
 
 ## 1. Video Presentation
 
-[Video Presentation](https://www.youtube.com/watch?v=fN0mfGCGaM4)
+[![Video Presentation](images/Anticipated_Appearance.png)](https://www.youtube.com/watch?v=fN0mfGCGaM4)
 
 ## 2. Project Summary
 
